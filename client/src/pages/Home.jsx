@@ -45,8 +45,6 @@ function Home() {
             </Button>
           </div>
         </Col>
-
-        {/* Right Section */}
         <Col md={6} className="right-section">
           <img
             src="https://preview.redd.it/mohanlals-jailer-look-v0-8chizw0y0zxa1.jpg?width=1080&crop=smart&auto=webp&s=66b16935f5068f7c47d45cf753393f5e33e1b558"

@@ -1,11 +1,15 @@
 import mongoose from "mongoose";
 
 const messageScema = mongoose.Schema({
-  name: {
+  username: {
     type: String,
   },
   message: {
     type: String,
+  },
+  time: {
+    type: Date,
+    default: Date.now,
   },
 });
 
