@@ -1,7 +1,6 @@
 import messageModel from "../model/messageModel.js";
 
 const messageSubmit = async (req, res, next) => {
-  console.log(req.body);
   const { username, message, time } = req.body;
   try {
     const addData = await messageModel.create({
