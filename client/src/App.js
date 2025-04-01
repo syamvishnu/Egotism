@@ -1,8 +1,9 @@
 import "./App.css";
 import Navbar from "./components/Navbar.jsx";
-import Home from "./pages/Home.jsx";
+import Market from "./pages/Market.jsx";
 import Message from "./pages/Message.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Payment from "./pages/Payment.jsx";
 
 function App() {
   const router = createBrowserRouter([
@@ -10,8 +11,9 @@ function App() {
       path: "/",
       element: <Navbar />,
       children: [
-        { path: "", element: <Home /> },
+        { path: "", element: <Market /> },
         { path: "message", element: <Message /> },
+        { path: "payment", element: <Payment /> },
       ],
     },
   ]);
