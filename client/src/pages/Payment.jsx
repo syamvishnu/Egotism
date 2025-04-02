@@ -8,7 +8,6 @@ import {
   Form,
   Image,
 } from "react-bootstrap";
-import { Copy } from "react-bootstrap-icons";
 
 function CryptoPayment() {
   const [formData, setFormData] = useState({
