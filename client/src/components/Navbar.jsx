@@ -51,7 +51,14 @@ function Navbars() {
                       alt=""
                     />
                     <strong className="me-auto">
-                      Telegram: @jkhxczxccjkhk
+                      <strong>Telegram: </strong>{" "}
+                      <Link
+                        to="https://t.me/ctf_osint"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        @ctf_osint
+                      </Link>
                     </strong>
                   </Toast.Header>
                 </Toast>

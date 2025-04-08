@@ -8,6 +8,7 @@ import {
   Form,
   Image,
 } from "react-bootstrap";
+import walletPic from "../imgs/wallet.jpg";
 
 function CryptoPayment() {
   const [formData, setFormData] = useState({
@@ -106,7 +107,6 @@ function CryptoPayment() {
         </Card>
       )}
 
-      {/* PAYMENT DETAILS - ONLY SHOW AFTER FORM SUBMISSION */}
       {isSubmitted && (
         <Container className="mt-4" fluid>
           <Card className="shadow-lg p-4">
@@ -127,7 +127,7 @@ function CryptoPayment() {
               <Row>
                 <Col md={3} className="text-center">
                   <Image
-                    src="https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg"
+                    src={walletPic}
                     width="100"
                     height="100"
                     className="border rounded"
@@ -137,7 +137,7 @@ function CryptoPayment() {
                   <p className="fw-bold">Recipient's Wallet Address</p>
                   <div className="d-flex align-items-center">
                     <span className="text-muted small me-2">
-                      0x54853d1b3f1b002803fc75e56bf2abc6bg54g
+                      0x159DCf61a39384Dc59CE1b24e9816a676C87BD11
                     </span>
                   </div>
                   <p className="text-muted small">
